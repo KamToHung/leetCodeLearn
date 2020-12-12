@@ -1,4 +1,4 @@
-package leetcode.learn.zowoyoo;
+package leetcode.learn.tree;
 
 /**
  * 226

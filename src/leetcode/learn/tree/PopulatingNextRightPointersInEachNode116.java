@@ -1,4 +1,4 @@
-package leetcode.learn.zowoyoo;
+package leetcode.learn.tree;
 
 /**
  * TODO
@@ -36,13 +36,13 @@ public class PopulatingNextRightPointersInEachNode116 {
     }
 
     private void connectTwoNode(Node leftNode,Node rightNode){
-        if (leftNode == null || rightNode == null) {
-            return;
-        }
-        leftNode.next = rightNode;
-        connectTwoNode(leftNode.left,leftNode.right);
-        connectTwoNode(rightNode.left,rightNode.right);
-        connectTwoNode(leftNode.right,rightNode.left);
+       if (leftNode == null || rightNode == null) {
+           return;
+       }
+       leftNode.next = rightNode;
+       connectTwoNode(leftNode.left,leftNode.right);
+       connectTwoNode(leftNode.right,rightNode.left);
+       connectTwoNode(rightNode.left,rightNode.right);
     }
 
 }

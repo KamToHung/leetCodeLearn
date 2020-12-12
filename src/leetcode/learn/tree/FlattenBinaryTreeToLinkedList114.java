@@ -1,4 +1,4 @@
-package leetcode.learn.zowoyoo;
+package leetcode.learn.tree;
 
 /**
  * 114
@@ -28,14 +28,14 @@ public class FlattenBinaryTreeToLinkedList114 {
         }
         flatten(root.left);
         flatten(root.right);
-        TreeNode leftNode = root.left;
-        TreeNode rightNode = root.right;
+        TreeNode left = root.left;
+        TreeNode right = root.right;
         root.left = null;
-        root.right = leftNode;
+        root.right = left;
         TreeNode p = root;
         while (p.right != null) {
             p = p.right;
         }
-        p.right = rightNode;
+        p.right = right;
     }
 }
