@@ -1,3 +1,4 @@
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -65,4 +66,5 @@ public class IPHuisu {
         IPHuisu ipHuisu = new IPHuisu();
         System.out.println(ipHuisu.restoreIpAddresses("101023"));
     }
+    
 }
