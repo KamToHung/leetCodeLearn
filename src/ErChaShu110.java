@@ -52,30 +52,24 @@ public class ErChaShu110 {
     }
 
     public static void main(String[] args) {
-//        ErChaShu110 erChaShu110 = new ErChaShu110();
-//
-//        ErChaShu110.TreeNode n4 = new ErChaShu110.TreeNode(4);
-//
-//        ErChaShu110.TreeNode n7 = new ErChaShu110.TreeNode(7);
-//
-//        ErChaShu110.TreeNode n8 = new ErChaShu110.TreeNode(8);
-//
-//        ErChaShu110.TreeNode n5 = new ErChaShu110.TreeNode(5, n7, n8);
-//
-//        ErChaShu110.TreeNode n2 = new ErChaShu110.TreeNode(2, n4, n5);
-//
-//        ErChaShu110.TreeNode n6 = new ErChaShu110.TreeNode(6);
-//
-//        ErChaShu110.TreeNode n3 = new ErChaShu110.TreeNode(3, null, n6);
-//
-//        ErChaShu110.TreeNode n1 = new ErChaShu110.TreeNode(1, n2, n3);
-//
-//        System.out.println(erChaShu110.isBalanced(n1));
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("supplierPrice",100);
-        double supplierPrice = Double.parseDouble(String.valueOf(map.get("supplierPrice")));
+        ErChaShu110 erChaShu110 = new ErChaShu110();
 
-        DecimalFormat df = new DecimalFormat("#.00");
-        System.out.println(df.format(supplierPrice));
+        ErChaShu110.TreeNode n4 = new ErChaShu110.TreeNode(4);
+
+        ErChaShu110.TreeNode n7 = new ErChaShu110.TreeNode(7);
+
+        ErChaShu110.TreeNode n8 = new ErChaShu110.TreeNode(8);
+
+        ErChaShu110.TreeNode n5 = new ErChaShu110.TreeNode(5, n7, n8);
+
+        ErChaShu110.TreeNode n2 = new ErChaShu110.TreeNode(2, n4, n5);
+
+        ErChaShu110.TreeNode n6 = new ErChaShu110.TreeNode(6);
+
+        ErChaShu110.TreeNode n3 = new ErChaShu110.TreeNode(3, null, n6);
+
+        ErChaShu110.TreeNode n1 = new ErChaShu110.TreeNode(1, n2, n3);
+
+        System.out.println(erChaShu110.isBalanced(n1));
     }
 }
