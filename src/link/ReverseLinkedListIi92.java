@@ -48,4 +48,36 @@ public class ReverseLinkedListIi92 {
         return newNode.next;
     }
 
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if(head == null || head.next == null) {
+            return null;
+        }
+        ListNode first = head;
+        ListNode last = head;
+        for (int i = 0; i < k; i++) {
+            // 不够K长度返回
+            if (last == null) {
+                return first;
+            }
+            last = last.next;
+        }
+        ListNode reverse = reverse(first, last);
+        first.next = reverseKGroup(last, k);
+        return reverse;
+    }
+
+    private ListNode reverse(ListNode first,ListNode last) {
+        // 翻转两个节点之间的链表
+        ListNode cur = first;
+        ListNode next = null;
+        ListNode pre = null;
+        while (cur != last) {
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
+
 }
