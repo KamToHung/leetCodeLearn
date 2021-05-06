@@ -21,7 +21,7 @@ package dynamic;
  * 输入：text1 = "abc", text2 = "def"
  * 输出：0
  * 解释：两个字符串没有公共子序列，返回 0。
- * TODO 找出状态转移方程式
+ * 找出状态转移方程式
  * i:text1前i个字符
  * j:text2前j个字符
  * f(i, j) = f(i-1,j-1) + 1, i = j
