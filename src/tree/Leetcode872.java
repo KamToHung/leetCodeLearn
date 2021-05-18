@@ -29,16 +29,21 @@ package tree;
  * <p>
  * 输入：root1 = [1,2,3], root2 = [1,3,2]
  * 输出：false
- * TODO
  */
-public class LeetCode872 {
+public class Leetcode872 {
 
     public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
@@ -47,6 +52,23 @@ public class LeetCode872 {
     }
 
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        return false;
+        // 想法：把叶子节点都记录下来，然后一个个对比
+        StringBuilder builder1 = new StringBuilder();
+        StringBuilder builder2 = new StringBuilder();
+        add(root1, builder1);
+        add(root2, builder2);
+        return builder1.toString().equals(builder2.toString());
+    }
+
+    private void add(TreeNode root, StringBuilder builder) {
+        if (root == null) {
+            return;
+        }
+        if (root.right == null && root.left == null) {
+            builder.append('-').append(root.val);
+            return;
+        }
+        add(root.left, builder);
+        add(root.right, builder);
     }
 }
