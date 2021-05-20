@@ -4,7 +4,8 @@
  * @author Terry
  * @since 2020/8/25 17:39
  */
-public class HuangjinkuanggongHuisu {
+public class
+HuangjinkuanggongHuisu {
 
     private int max = 0;
 
