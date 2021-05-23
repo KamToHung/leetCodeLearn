@@ -24,7 +24,7 @@ package string;
  * 输入：haystack = "", needle = ""
  * 输出：0
  */
-public class LeetCode28 {
+public class Leetcode28 {
 
     public int strStr(String haystack, String needle) {
         for (int i = 0; i <= haystack.length() - needle.length(); i++) {
