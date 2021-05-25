@@ -22,7 +22,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/bracket-lcci
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Leetcodemianshi0809 {
+public class Interview0809 {
 
     List<String> result = new ArrayList<>();
 
